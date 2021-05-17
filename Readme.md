@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Макс Попов](https://up.htmlacademy.ru/htmlcss/31/user/1325107).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 
