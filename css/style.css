@@ -43,7 +43,6 @@ display: none;
 }
 
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -65,7 +64,7 @@ img {
 }
 
 
-a:not(.main-nav) {
+.nav-link:not(.main-nav) {
   color: var(--basic-white);
 }
 
@@ -75,11 +74,12 @@ a:focus {
   ;
 }
 
-.main-nav a {
+.main-nav .nav-link {
   color: var(--basic-white);
   font-size: 14px;
   line-height: 114%;
 }
+
 
 h1 {
   font-size: 60px;
@@ -114,12 +114,12 @@ h1 {
 }
 
 
-.hits-item p {
+.hits-item .text {
  font-size: 45px;
  line-height: 100%;
 }
 
-.hits-item span {
+.hits-item .weight {
  font-size: 30px;
  line-height: 117%;
 }
@@ -137,7 +137,7 @@ h1 {
  color: var(--basic-black);
 }
 
-.box-news article {
+.box-news .news {
  font-size: 24px;
  line-height: 125%;
 }
@@ -147,12 +147,12 @@ h1 {
 }
 
 
-.contacts p {
+.contacts .adress {
  font-size: 14px;
  line-height: 143%;
 }
 
-.contacts b {
+.contacts .main-adress {
  font-size: 18px;
  line-height: 133%;
 }
@@ -171,4 +171,14 @@ h1 {
 .footer-copyright {
  font-size: 12px;
  line-height: 150%;
+}
+
+/* каталог */
+
+.icecream-filter {
+  line-height: 112%;
+}
+
+.breadcrumbs {
+  line-height: 112%;
 }
