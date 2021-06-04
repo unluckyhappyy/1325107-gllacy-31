@@ -58,8 +58,8 @@ img {
 }
 
 
-.main-nav a:not(.main-header-logo):hover,
-.main-nav a:not(.main-header-logo):focus {
+.main-nav .nav-link:not(.main-header-logo):hover,
+.main-nav .nav-link:not(.main-header-logo):focus {
   background-color: var(--basic-white);
 }
 
@@ -92,7 +92,7 @@ h1 {
   line-height: 137%;
 }
 
-.banners-item img {
+.banners-item .image {
   border-radius: 16px;
 }
 
@@ -108,7 +108,7 @@ h1 {
   line-height: 122%;
 }
 
-.banners-list h2 {
+.banners-list .bold {
   font-size: 35px;
   line-height: 117%;
 }
@@ -128,7 +128,7 @@ h1 {
   color: var(--basic-black);
 }
 
-.features h2 {
+.features .features-news {
  font-size: 24px;
  line-height: 125%;
 }
