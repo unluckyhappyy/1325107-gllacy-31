@@ -64,15 +64,32 @@ img {
 .main-nav {
   display: grid;
   grid-template-columns: minmax(154px, 154px) 1fr min-content;
-  margin: 0 auto;
-  padding: 0 10px;
   line-height: 112%;
   color: var(--basic-white);
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header-logo {
+  padding: 5px;
 }
 
 .site-nav {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 360px;
+}
+
+.user-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 245px;
+  margin-top: 15px;
+  align-content: space-around;
 }
 
 
@@ -104,12 +121,26 @@ h1 {
 .container {
 margin: 0 auto;
 padding: 0 10px;
+max-width: 1200px;
 }
 
-.button .button-main {
-  text-align: center;
+.icecream {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+}
+
+.button-main {
+  display: flex;
+  justify-content: center;
   font-size: 32px;
   line-height: 137%;
+  margin: auto;
 }
 
 .image {
@@ -117,8 +148,17 @@ padding: 0 10px;
 }
 
 .button {
+  display: flex;
   font-size: 18px;
   line-height: 133%;
+  width: 191px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  color: var(--basic-white);
+  background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  border-radius: 70px;
 }
 
 .banners-list {
@@ -160,6 +200,11 @@ padding: 0 10px;
  line-height: 125%;
 }
 
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .box {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -197,14 +242,36 @@ padding: 0 10px;
   grid-template-columns: repeat(3,1fr);
 }
 
-.footer-information {
+.main-footer {
  font-size: 13px;
  line-height: 138%;
 }
 
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-information {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .footer-copyright {
- font-size: 12px;
- line-height: 150%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  font-size: 12px;
+  line-height: 150%;
 }
 
 /* каталог */
@@ -218,6 +285,9 @@ padding: 0 10px;
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   line-height: 112%;
   font-weight: 500;
 }

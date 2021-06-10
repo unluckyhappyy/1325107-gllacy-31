@@ -36,15 +36,16 @@
       <a class="nav-link header-login-link" href="#"><img src="img/icons/login-icon.svg" alt="">Вход</a>
       <a class="nav-link cart" href="#"><img src="img/icons/cart-icon.svg" alt="">Корзина</a>
       <p>с 10 до 20, ежедневно</p>
-      <a class="nav-link" href="tel:8812450-25-25"><b>8 812 450-25-25</b></a>
+      <a href="tel:8812450-25-25"><b>8 812 450-25-25</b></a>
     </div>
     </nav>
   </header>
 
   <main class="container">
-    <h1>Крем-брюле и пломбир<br>с малиновым джемом</h1>
 
     <img class="icecream" src="img/icecream.png" width="647" height="584" alt="Два рожка">
+
+    <h1 class="name">Крем-брюле и пломбир<br>с малиновым джемом</h1>
 
     <a class="button button-main" href="catalog.html">Давайте оба!</a>
 
@@ -107,15 +108,15 @@
           и проверенных временем технологий.
         </li>
         <li class="features-item">
+          <img src="img/icons/cow-icon.svg" width="16" height="32" alt="Иконка коровы">
+          Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
+          с которыми нас связывает долговременное сотрудничество.
+        </li>
+        <li class="features-item">
           <img src="img/icons/leaf-icon.svg" width="16" height="32" alt="Иконка листика">
           Для приготовления мороженого используются настоящие сливки и молоко высочайшего
           качества.
           Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-        </li>
-        <li class="features-item">
-          <img src="img/icons/cow-icon.svg" width="16" height="32" alt="Иконка коровы">
-          Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
-          с которыми нас связывает долговременное сотрудничество.
         </li>
         <li class="features-item">
           <img src="img/icons/thermometer-icon.svg" width="16" height="32" alt="Иконка термометра">
@@ -152,7 +153,7 @@
       <button class="button" type="submit">Форма обратной связи</button>
     </section>
 
-    <section class="login-link">
+    <section class="login-link" hidden>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <label for="login-login" hidden>Логин</label>
         <input id="login-login" type="email" name="login" placeholder="email@example.com">
@@ -167,7 +168,7 @@
       </form>
     </section>
 
-    <section class="feedback-modal">
+    <section class="feedback-modal" hidden>
       <p class="feedback-modal-description">Мы обязательно вам ответим!</p>
       <form class="feedback-form" action="https://echoa.htmlacademy.ru" method="POST">
       <p>
@@ -188,7 +189,7 @@
   <footer class="main-footer">
     <div class="container container-footer">
     <section class="footer-social">
-      <ul>
+      <ul class="social">
         <li>
           <a class="social-button" href="#"><img src="img/icons/facebook-icon.svg" alt=""></a>
         </li>
@@ -205,7 +206,7 @@
     </section>
 
     <section class="footer-information">
-      <ul>
+      <ul class="information">
         <li>
           <a class="information-link bold" href="#"><img src="img/icons/heart-icon.svg" alt=""><b>Для поставщиков</b></a>
         </li>
