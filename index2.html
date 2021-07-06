@@ -21,16 +21,16 @@
       </a>
       <ul class="site-nav">
         <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a>
-          <ul class="nav-catalog">
-            <div class="new-cream-list">
-              <h2 class="cream-news">Новинки</h2>
-              <li>Сливочное</li>
-              <li>Щербеты</li>
-              <li>Фруктовый лед</li>
-              <li>Мелорин</li>
-            </div>
-          </ul>
-        </li>
+        <ul class="nav-catalog">
+          <div class="new-cream-list">
+          <h2 class="cream-news">Новинки</h2>
+          <li>Сливочное</li>
+          <li>Щербеты</li>
+          <li>Фруктовый лед</li>
+          <li>Мелорин</li>
+        </div>
+        </ul>
+      </li>
         <li class="nav-item"><a class="nav-link" href="#">Доставка и оплата</a></li>
         <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
       </ul>
@@ -162,7 +162,7 @@
     </div>
 
     <section class="contacts">
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8180266209336!2d30.31518695164361!3d59.96834198179806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1625419336555!5m2!1sru!2sru" width="1200" height="430" style="border:0;" allowfullscreen=""></iframe>
+      <img class="map" src="img/map.png" width="1200" height="430" alt="Карта">
       <div class="container contacts-container">
         <div class="map-window">
           <p class="small adress">Адрес главного офиса<br> и офлайн-магазина:<br>
@@ -177,13 +177,13 @@
 
     </section>
 
-    <section class="modal modal-link">
+    <section class="login-link" hidden>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <label for="login-login" hidden>Логин</label>
-        <input class="login-login" id="login-login" type="email" name="login" placeholder="email@example.com">
+        <input id="login-login" type="email" name="login" placeholder="email@example.com">
 
         <label for="login-password" hidden>Пароль</label>
-        <input class="login-password" id="login-password" type="password" name="password" placeholder="......">
+        <input id="login-password" type="password" name="password" placeholder="......">
 
         <button class="button button-login" type="submit">Войти</button>
 
@@ -192,28 +192,21 @@
       </form>
     </section>
 
-    <section class="search-modal">
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <label for="search" hidden>Поиск</label>
-        <input class="search-link" id="search" type="text" placeholder="Крем-брюле">
-      </form>
-    </section>
-
-    <section class="feedback-modal" >
+    <section class="feedback-modal" hidden>
       <p class="feedback-modal-description">Мы обязательно вам ответим!</p>
       <form class="feedback-form" action="https://echoa.htmlacademy.ru" method="POST">
         <p>
           <label for="feedback-name"></label>
-          <input class="feedback-name" id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+          <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="feedback-email"></label>
-          <input class="feedback-email" id="feedback-email" type="email" name="email" placeholder="email@example.com">
+          <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
         </p>
-        <textarea class="comment" name="comment" id="comment-field" rows="8" cols="40" placeholder="В свободной форме"></textarea>
+        <textarea name="comment" id="comment-field" rows="8" cols="40">В свободной форме</textarea>
+        <button class="button" type="submit">Отправить</button>
+        <button type="button">Закрыть</button>
       </form>
-      <button class="button button-feedback" type="submit">Отправить</button>
-      <button class="close-modal"></button>
     </section>
   </main>
 
@@ -262,7 +255,7 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+
 </body>
 
 </html>
