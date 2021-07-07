@@ -122,10 +122,11 @@ img {
 .user-nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  width: 245px;
-  margin-top: 10px;
+  gap: 15px;
+  width: 270px;
+  margin-top: 20px;
 }
 
 .nav-icon {
@@ -151,8 +152,10 @@ img {
 }
 
 .search {
+  display: inline;
   width: 32px;
   height: 32px;
+  margin-top: 5px;
 }
 
 .search::after {
@@ -162,12 +165,14 @@ img {
   z-index: -1;
   min-width: 32px;
   height: 32px;
-  right: 23px;
+  right: 7px;
+  bottom: 25px;
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.2);
 }
 
 .header-login-link {
+  display: inline;
   width: 92px;
   height: 32px;
   font-weight: 500;
@@ -180,12 +185,14 @@ img {
   z-index: -1;
   min-width: 80px;
   height: 32px;
-  right: 65px;
+  right: 15px;
+  bottom: 25px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.2);
 }
 
 .cart {
+  display: inline;
   font-weight: 500;
   width: 100px;
   height: 32px;
@@ -202,7 +209,8 @@ img {
   z-index: -1;
   min-width: 110px;
   height: 32px;
-  right: 100px;
+  right: 15px;
+  bottom: 25px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
 }
@@ -363,11 +371,19 @@ padding: 0 10px;
   position: relative;
   bottom: 270px;
   left: 20px;
-  min-width: 60px;
+  max-width: 60px;
   height: 60px;
   border-radius: 100%;
   background: #FFFFFF;
 }
+
+.hit-back {
+  padding: 14px;
+  min-width: 32px;
+  height: 32px;
+
+}
+
 
 .text {
  font-size: 45px;
