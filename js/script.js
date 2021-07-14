@@ -30,4 +30,11 @@ closeModal.addEventListener("click", function(evt) {
   feedbackPopup.classList.remove("feedback-modal-show");
   });
 
+const cart = document.querySelector(".cart");
+const basket = document.querySelector(".popup-basket");
+const closePopup = document.querySelector(".popup-close");
 
+cart.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  basket.classList.toggle("popup-basket-show");
+  });
