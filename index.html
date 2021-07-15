@@ -167,7 +167,8 @@
               вкусного, что у нас происходит.
               Обещаем не спамить<br> и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru" method="POST">
-              <input class="email" type="email" name="email" placeholder="email@example.com">
+              <label for="email" hidden>Почта</label>
+              <input class="email" type="email" name="email" id="email" placeholder="email@example.com">
               <button class="button button-form" type="submit">Отправить</button>
             </form>
           </div>
@@ -223,6 +224,7 @@
           <label for="feedback-email"></label>
           <input class="feedback-email" id="feedback-email" type="email" name="email" placeholder="email@example.com">
         </p>
+        <label for="comment-field" hidden>Комментарий</label>
         <textarea class="comment" name="comment" id="comment-field" rows="8" cols="40" placeholder="В свободной форме"></textarea>
       </form>
       <button class="button button-feedback" type="submit">Отправить</button>
@@ -268,16 +270,16 @@
       <section class="footer-social">
         <ul class="social">
           <li>
-            <a class="social-button" href="#"><img src="img/icons/facebook-icon.svg" alt=""></a>
+            <a class="social-button" href="#"><img src="img/icons/facebook-icon.svg" width="32" height="32" alt=""></a>
           </li>
           <li>
-            <a class="social-button" href="#"><img src="img/icons/vk-icon.svg" alt=""></a>
+            <a class="social-button" href="#"><img src="img/icons/vk-icon.svg" width="32" height="32" alt=""></a>
           </li>
           <li>
-            <a class="social-button" href="#"><img src="img/icons/instagram-icon.svg" alt=""></a>
+            <a class="social-button" href="#"><img src="img/icons/instagram-icon.svg" width="32" height="32" alt=""></a>
           </li>
           <li>
-            <a class="social-button" href="#"><img src="img/icons/twitter-icon.svg" alt=""></a>
+            <a class="social-button" href="#"><img src="img/icons/twitter-icon.svg" width="32" height="32" alt=""></a>
           </li>
         </ul>
       </section>
@@ -285,7 +287,7 @@
       <section class="footer-information">
         <ul class="information">
           <li>
-            <a class="information-link bold" href="#"><img class="heart" src="img/icons/heart-icon.svg" alt=""><b>Для
+            <a class="information-link bold" href="#"><img class="heart" src="img/icons/heart-icon.svg" width="15" height="13" alt=""><b>Для
                 поставщиков</b></a>
           </li>
           <li>

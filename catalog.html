@@ -51,7 +51,8 @@
       <div class="sort-filter">
         <fieldset class="filter">
           <legend  class="sort-first">Сортировка:</legend>
-          <select class="sort" name="sort">
+          <label for="sort" hidden>Сортировка:</label>
+          <select class="sort" name="sort" id="sort">
             <option value="По популярности">По популярности</option>
             <option>сначала недорогие</option>
             <option>сначала дорогие</option>
@@ -62,7 +63,8 @@
       <fieldset class="filter">
         <legend>Цена: 100 ₽ – 500 ₽</legend>
         <div class="price">
-          <input type="range" min="0" max="500" step="100" value="100">
+          <label for="range" hidden>Цена:</label>
+          <input type="range" min="0" max="500" step="100" value="100" id="range">
       </div>
     </fieldset>
       <div class="fat-content">
@@ -220,7 +222,7 @@
     </section>
 
     <ul class="breadcrumbs">
-      <li><img class="transform" src="img/icons/icon-right-small.png" alt=""></li>
+      <li><img class="transform" src="img/icons/icon-right-small.png" width="7" height="12" alt=""></li>
       <li>1</li>
       <li>
         <a href="#">2</a>
@@ -234,7 +236,7 @@
       <li>
         <a href="#">5</a>
       </li>
-      <li><img src="img/icons/icon-right-small.png" alt=""></li>
+      <li><img src="img/icons/icon-right-small.png" width="7" height="12" alt=""></li>
     </ul>
 
   </main>
@@ -245,16 +247,16 @@
       <section class="footer-social">
         <ul class="social">
           <li>
-            <a class="social-button" href="#"><img src="img/icons/facebook-icon.svg" alt=""></a>
+            <a class="social-button" href="#"><img src="img/icons/facebook-icon.svg" width="32" height="32" alt=""></a>
           </li>
           <li>
-            <a class="social-button" href="#"><img src="img/icons/vk-icon.svg" alt=""></a>
+            <a class="social-button" href="#"><img src="img/icons/vk-icon.svg" width="32" height="32" alt=""></a>
           </li>
           <li>
-            <a class="social-button" href="#"><img src="img/icons/instagram-icon.svg" alt=""></a>
+            <a class="social-button" href="#"><img src="img/icons/instagram-icon.svg" width="32" height="32" alt=""></a>
           </li>
           <li>
-            <a class="social-button" href="#"><img src="img/icons/twitter-icon.svg" alt=""></a>
+            <a class="social-button" href="#"><img src="img/icons/twitter-icon.svg" width="32" height="32" alt=""></a>
           </li>
         </ul>
       </section>
@@ -262,7 +264,7 @@
       <section class="footer-information">
         <ul class="information">
           <li>
-            <a class="information-link bold" href="#"><img class="heart" src="img/icons/heart-icon.svg" alt=""><b>Для
+            <a class="information-link bold" href="#"><img class="heart" src="img/icons/heart-icon.svg" width="15" height="13" alt=""><b>Для
                 поставщиков</b></a>
           </li>
           <li>

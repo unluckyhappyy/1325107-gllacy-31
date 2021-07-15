@@ -757,7 +757,7 @@ box-sizing: border-box;
 }
 
 .close-modal {
-  background: url(../img/icons/X-big.png) no-repeat;
+  background: url(../img/icons/x-big.png) no-repeat;
   width: 18px;
   height: 18px;
   border: none;
@@ -887,7 +887,7 @@ box-sizing: border-box;
   width: 11px;
   height: 11px;
 
-  background-image: url("../img/icons/X.svg");
+  background-image: url("../img/icons/x.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
